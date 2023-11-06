@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Web Desktop",
+    "description": "Desktop from browser",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "assets/images/icons/icon_192.png"
+    }
+}
