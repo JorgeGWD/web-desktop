@@ -1,4 +1,3 @@
-// popup.js
 function abrirNuevaPestana() {
   chrome.tabs.create({ url: 'index.html' });
 }
