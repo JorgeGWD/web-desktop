@@ -4,8 +4,13 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
 }
 
 #clock {
-    font-size: 2em;
+    color: azure;
+    font-size: 10em;
+    text-shadow: 5px 5px 5px black
 }
