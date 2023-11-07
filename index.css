@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -8,6 +9,9 @@ body {
     background-size: cover;
     background-position: 50%;
 }
+
+
+/* CLOCK */
 
 .clock {
     display: flex;
@@ -18,4 +22,59 @@ body {
 
 #seconds {
     display: none;
+}
+
+
+/* TODO */
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    color: azure;
+    border-radius: 15px;
+    background-color: #0d1117;
+}
+
+.todo input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.todo input:focus {
+    border: none;
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.actions button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    color: azure;
+}
+
+li {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
 }
