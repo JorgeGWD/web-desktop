@@ -9,8 +9,13 @@ body {
     background-position: 50%;
 }
 
-#clock {
+.clock {
+    display: flex;
     color: azure;
-    font-size: 10em;
-    text-shadow: 5px 5px 5px black
+    font-size: 10rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .1)
+}
+
+#seconds {
+    display: none;
 }
