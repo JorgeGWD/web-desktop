@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 300px;
     padding: 20px;
     color: white;
     border-radius: 15px;
@@ -53,7 +54,8 @@ input:focus {
 
 .actions {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 button {
@@ -75,6 +77,8 @@ ul {
 }
 
 li {
+    font-size: 18px;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -89,6 +93,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 300px;
     padding: 20px;
     color: white;
     border-radius: 15px;
