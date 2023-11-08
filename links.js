@@ -2,21 +2,21 @@ document.getElementById("showForm").addEventListener("click", showForm);
 document.getElementById("addItem").addEventListener("click", addItem);
 
 function showForm() {
-    var linkForm = document.getElementById("linkForm");
+    let linkForm = document.getElementById("linkForm");
     linkForm.style.display = "flex";
 }
 
 function addItem() {
-    var newTitle = document.getElementById("title").value;
-    var newURL = document.getElementById("url").value;
+    let newTitle = document.getElementById("title").value;
+    let newURL = document.getElementById("url").value;
 
     if (newTitle && newURL) {
-        var linksList = document.getElementById("linksList");
+        let linksList = document.getElementById("linksList");
 
-        var li = document.createElement("li");
+        let li = document.createElement("li");
         li.className = "item";
 
-        var newLink = document.createElement("a");
+        let newLink = document.createElement("a");
         newLink.href = newURL;
         newLink.textContent = newTitle;
         newLink.target = "_blank";
