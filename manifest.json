@@ -4,9 +4,16 @@
     "description": "Desktop from browser",
     "version": "1.0",
     "action": {
-      "default_popup": "popup.html"
+        "default_icon": "assets/images/icons/icon_192.png"
     },
     "icons": {
         "128": "assets/images/icons/icon_192.png"
-    }
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
