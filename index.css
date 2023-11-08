@@ -5,6 +5,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-color: #0d1117;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -32,9 +33,9 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    color: azure;
+    color: white;
     border-radius: 15px;
-    background-color: #0d1117;
+    background-color: #222d3d;
 }
 
 .todo input {
@@ -58,6 +59,8 @@ body {
     padding: 5px;
     border: none;
     border-radius: 5px;
+    color: white;
+    background-color: #ff5555;
     cursor: pointer;
 }
 
@@ -67,7 +70,7 @@ ul {
     gap: 10px;
     list-style-type: none;
     padding: 0;
-    color: azure;
+    color: white;
 }
 
 li {
@@ -76,5 +79,5 @@ li {
 
 .completed {
     text-decoration: line-through;
-    color: #888;
+    color: #ff5555;
 }
