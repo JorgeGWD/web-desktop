@@ -1,5 +1,5 @@
-function abrirNuevaPestana() {
+function openNewTab() {
   chrome.tabs.create({ url: 'index.html' });
 }
 
-document.getElementById('abrirPestanaBtn').addEventListener('click', abrirNuevaPestana);
+document.getElementById('openTabBtn').addEventListener('click', openNewTab);
