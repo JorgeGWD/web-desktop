@@ -1,5 +1,6 @@
 document.getElementById("showForm").addEventListener("click", showForm);
 document.getElementById("addItem").addEventListener("click", addItem);
+document.getElementById("cancelForm").addEventListener("click", cancelForm);
 
 function showForm() {
     let linkForm = document.getElementById("linkForm");
@@ -28,4 +29,10 @@ function addItem() {
         document.getElementById("url").value = "";
         document.getElementById("linkForm").style.display = "none";
     }
+}
+
+function cancelForm() {
+    document.getElementById("title").value = "";
+    document.getElementById("url").value = "";
+    document.getElementById("linkForm").style.display = "none";
 }
