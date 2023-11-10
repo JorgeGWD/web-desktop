@@ -4,9 +4,15 @@ function updateBackground() {
     let collectionId = '206';
     let imageUrl = `https://source.unsplash.com/collection/${collectionId}/${dayOfYear} 1920x1080`;
 
-    document.body.style.backgroundImage = `url('${imageUrl}')`;
+    let tempImage = new Image();
+    tempImage.src = imageUrl;
+
+    tempImage.onload = function() {
+        document.body.style.backgroundImage = `url('${imageUrl}')`;
+        document.body.style.opacity = '1';
+    };
 }
-  
+
 function getDayOfYear(date) {
     let start = new Date(date.getFullYear(), 0, 0);
     let diff = date - start;
