@@ -11,9 +11,9 @@ function addItem() {
     let newTitle = document.getElementById("title").value;
     let newURL = document.getElementById("url").value;
 
-    if (newTitle && newURL) {
-        let linksList = document.getElementById("linksList");
+    let linksList = document.getElementById("linksList");
 
+    if (newTitle && newURL) {
         let li = document.createElement("li");
         li.className = "item";
 
@@ -29,10 +29,23 @@ function addItem() {
         document.getElementById("url").value = "";
         document.getElementById("linkForm").style.display = "none";
     }
+
+    if (linksList.childElementCount === 0) {
+        linksList.style.display = "none";
+    } else {
+        linksList.style.display = "flex";
+    }
 }
 
 function cancelForm() {
     document.getElementById("title").value = "";
     document.getElementById("url").value = "";
     document.getElementById("linkForm").style.display = "none";
+
+    let linksList = document.getElementById("linksList");
+    if (linksList.childElementCount === 0) {
+        linksList.style.display = "none";
+    } else {
+        linksList.style.display = "flex";
+    }
 }

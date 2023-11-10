@@ -58,6 +58,10 @@ input:focus {
     gap: 10px;
 }
 
+#taskList {
+    display: none;
+}
+
 button {
     padding: 5px;
     border: none;
@@ -104,6 +108,10 @@ li {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+}
+
+#linksList {
+    display: none;
 }
 
 #linksList li a {
